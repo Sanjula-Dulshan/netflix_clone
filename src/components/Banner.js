@@ -1,13 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import requests from "../requests";
+import "./Banner.css";
 
 function Banner() {
   const [movie, setmovie] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(requests.fetchActionMovies);
+      const request = await axios.get(requests.fetchRomanceMovies);
       setmovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)
@@ -19,6 +20,11 @@ function Banner() {
     fetchData();
   }, []);
   console.log(movie);
+
+  function truncate(str, n) {
+    return str?.length > n ? str.substring(0, n - 1) + "..." : str;
+  }
+
   return (
     <header
       className="banner"
@@ -32,7 +38,7 @@ function Banner() {
     >
       <div className="banner_content">
         {/*title */}
-        <h1>
+        <h1 className="banner_title">
           {movie?.title ||
             movie?.original_title ||
             movie?.name ||
@@ -40,13 +46,12 @@ function Banner() {
         </h1>
 
         {/*button*/}
-        <div className="banner_button">
-          <button className="banner_button">Play</button>
-          <button className="banner_button">My List</button>
-        </div>
+
+        <button className="banner_button">Play</button>
+        <button className="banner_button">My List</button>
 
         {/*Description */}
-        <h1 className="banner_description">{movie?.overview}</h1>
+        <h1 className="banner_description">{truncate(movie.overview, 150)}</h1>
       </div>
     </header>
   );

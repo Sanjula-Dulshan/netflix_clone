@@ -24,7 +24,7 @@ function Row(props) {
   console.log(movies);
 
   const opts = {
-    height: "390",
+    height: "390px",
     width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -61,8 +61,8 @@ function Row(props) {
             alt={movie.name}
           />
         ))}
-        <div>{trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}</div>
       </div>
+      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );
 }

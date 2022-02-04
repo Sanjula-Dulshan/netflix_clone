@@ -7,7 +7,7 @@
 
 - 🌱 I’m currently studying **Sri Lanka Institute of Information Technology**
 
-- My project: [Netflix Clone](https://netflix-clone-56d39.web.app/)
+- My project demo: [Netflix Clone](https://netflix-clone-56d39.web.app/)
 
 - 📫 How to reach me **sdulshan10@gmail.com**
 

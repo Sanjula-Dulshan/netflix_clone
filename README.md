@@ -5,7 +5,9 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sanjula-dulshan" alt="sanjula-dulshan" /></a> </p>
 
-- 🌱 I’m currently studying **Sri Lanka Institute of Information Technology**
+- I’m currently studying **Sri Lanka Institute of Information Technology**
+
+- About my project: [Click Here](https://www.linkedin.com/posts/sanjula-dulshan-154329203_css-reactjs-netflix-activity-6850023270402584577-1Snt)
 
 - My project demo: [Netflix Clone](https://netflix-clone-56d39.web.app/)
 
